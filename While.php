@@ -34,3 +34,11 @@ echo "Je dors enfin...<br><br>";
 
 // TODO Votre code ici !
 
+$nombreMeuhMeuh = 1;
+echo "1.Je vais compter les MeuhMeuh pour dormir : <br>";
+while ($nombreMeuhMeuh <= 25) {
+    echo $nombreMeuhMeuh . " MeuhMeuh <br>";
+    $nombreMeuhMeuh++;
+}
+echo "Je dors enfin...<br><br>";
+

@@ -50,3 +50,33 @@ echo '12.Mes films : <br>';
 echo '13.Mes films : <br>';
 //ajoutez votre code ici
 
+$videotheque[] = array(
+    'nom' => 'film 1',
+    'date' => 2015,
+    'realisateur' => 'realisateur 1',
+    'acteurs' => array(
+        'acteur 1','acteur 2','acteur 3',
+    ),
+    "synopsis" => "synopsys numero 1",
+);
+$videotheque[] = array(
+    'nom' => 'film 2',
+    'date' => 2015,
+    'realisateur' => 'realisateur 2',
+    'acteurs' => array(
+        'acteur 1','acteur 2','acteur 3',
+    ),
+    "synopsis" => "synopsys numero 2",
+);
+$videotheque[] = array(
+    'nom' => 'film 3',
+    'date' => 2015,
+    'realisateur' => 'realisateur 3',
+    'acteurs' => array(
+        'acteur 1','acteur 2','acteur 3',
+    ),
+    "synopsis" => "synopsys numero 3",
+);
+
+printArray($videotheque);
+
