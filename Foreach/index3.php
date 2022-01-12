@@ -40,6 +40,18 @@ $videotheque = array(
 echo '12.Mes films : <br>';
 //ajoutez votre code ici
 
+foreach ($videotheque as $film) {
+    foreach ($film as $infoLabel => $info) {
+        if ($infoLabel === 'acteurs') {
+            echo "Acteurs : ".implode(", ",$info);
+        }
+        else{
+            echo $infoLabel." : ".$info."<br>";
+        }
+    }
+    echo "<br><br>";
+}
+
 
 //----------------------------------------
 //Afficher toutes les informations de la vidéothèque
@@ -51,8 +63,8 @@ echo '13.Mes films : <br>';
 //ajoutez votre code ici
 
 $videotheque[] = array(
-    'nom' => 'film 1',
-    'date' => 2015,
+    'nom' => 'movie 1',
+    'date' => 2000,
     'realisateur' => 'realisateur 1',
     'acteurs' => array(
         'acteur 1','acteur 2','acteur 3',
@@ -60,8 +72,8 @@ $videotheque[] = array(
     "synopsis" => "synopsys numero 1",
 );
 $videotheque[] = array(
-    'nom' => 'film 2',
-    'date' => 2015,
+    'nom' => 'movie 2',
+    'date' => 2000,
     'realisateur' => 'realisateur 2',
     'acteurs' => array(
         'acteur 1','acteur 2','acteur 3',
@@ -69,8 +81,8 @@ $videotheque[] = array(
     "synopsis" => "synopsys numero 2",
 );
 $videotheque[] = array(
-    'nom' => 'film 3',
-    'date' => 2015,
+    'nom' => 'movie 3',
+    'date' => 2000,
     'realisateur' => 'realisateur 3',
     'acteurs' => array(
         'acteur 1','acteur 2','acteur 3',
